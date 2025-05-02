@@ -25,10 +25,9 @@ public abstract class BankAccount {
 
     public void withdraw(double amount) {
         if (amount > Balance) {
-            System.out.println("Cannot withdraw more than you have");
+            throw new IllegalArgumentException("Insufficient funds");
         } else {
             Balance -= amount;
-            System.out.println("Withdrawing " + amount + " from account " + AccountID);
         }
     }
 
