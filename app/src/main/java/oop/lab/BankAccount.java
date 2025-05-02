@@ -18,10 +18,8 @@ public abstract class BankAccount {
 
     public void deposit(double amount) {
         if (amount > 0) {
-            System.out.println("You can only deposit a positive amount.");
         } else {
             Balance += amount;
-            System.out.println("Depositing " + amount + " to account " + AccountID);
         }
     }
 
