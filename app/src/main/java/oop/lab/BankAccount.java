@@ -17,7 +17,7 @@ public abstract class BankAccount {
     }
 
     public void deposit(double amount) {
-        if (amount > 0) {
+        if (amount < 0) {
         } else {
             Balance += amount;
         }
