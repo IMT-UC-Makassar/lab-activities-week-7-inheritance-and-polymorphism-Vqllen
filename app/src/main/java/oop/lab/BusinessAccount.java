@@ -8,6 +8,8 @@ public class BusinessAccount extends BankAccount implements OnlineService, LoanS
 
     @Override
     void calculateInterest() {
+        double Interest = 0.2;
+        Balance = Balance + Balance * Interest;
     }
 
     @Override
