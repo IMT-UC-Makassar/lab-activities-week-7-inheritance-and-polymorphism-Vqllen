@@ -8,6 +8,8 @@ public class SavingsAccount extends BankAccount implements OnlineService {
 
     @Override
     void calculateInterest() {
+        double Interest = 0.5;
+        Balance = Balance + Balance * Interest;
     }
 
     @Override
