@@ -22,5 +22,7 @@ public class CheckingAccount extends BankAccount implements OnlineService {
 
     @Override
     public void payBills(double amount) {
+        Balance -= amount;
+        System.out.println("You've payed " + amount + "of your Bills.");
     }
 }

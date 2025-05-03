@@ -24,6 +24,8 @@ public class BusinessAccount extends BankAccount implements OnlineService, LoanS
 
     @Override
     public void payBills(double amount) {
+        Balance -= amount;
+        System.out.println("You've payed " + amount + "of your Bills.");
     }
 
     @Override
