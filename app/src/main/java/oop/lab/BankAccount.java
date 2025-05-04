@@ -33,18 +33,3 @@ public abstract class BankAccount {
 
     abstract void calculateInterest();
 }
-
-@SuppressWarnings("unused")
-class Card {
-    private String CardID;
-    private String CardOwner;
-
-    public Card(String CardID, String CardOwner) {
-        this.CardID = CardID;
-        this.CardOwner = CardOwner;
-    }
-
-    public double getInterestRate() {
-        return 0.0;
-    }
-}
