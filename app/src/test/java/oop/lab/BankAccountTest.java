@@ -121,5 +121,3 @@ class CardTest {
         assertEquals(10.0, platinumCard.getInterestRate());
     }
 }
-
-
